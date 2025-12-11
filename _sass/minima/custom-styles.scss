@@ -15,8 +15,8 @@
 }
 
 .recomb-logo {
-  height: 26px; // Set a fixed height for the logo
-  width: auto;
+  height: auto;
+  width: 150px; // Set a fixed width for the logo
   margin-top: 5px; // Adjust vertical alignment
   margin-right: 20px;
 }
@@ -26,17 +26,19 @@
   width: auto;
   margin-top: 5px; // Adjust vertical alignment
   margin-right: 20px;
-  object-fit: cover;  /* Prevents stretching */
+  object-fit: cover;
+  /* Prevents stretching */
   // border-radius: 50%; /* Makes them circular */
   margin-bottom: 10px;
 }
 
 .sponsor-logo {
   height: 160px; // Set a fixed height for the logo 
-  width: auto; 
+  width: auto;
   margin-top: 5px; // Adjust vertical alignment
   margin-right: 20px;
-  object-fit: cover;  /* Prevents stretching */
+  object-fit: cover;
+  /* Prevents stretching */
   margin-bottom: 10px;
 }
 
@@ -45,12 +47,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 600px; /* Set a fixed height */
-  width: auto; /* Width will scale automatically */
-  max-width: 100%; /* Prevent it from overflowing its container */
+  height: 600px;
+  /* Set a fixed height */
+  width: auto;
+  /* Width will scale automatically */
+  max-width: 100%;
+  /* Prevent it from overflowing its container */
   margin-top: 5px;
   margin-bottom: 10px;
-  object-fit: cover; /* Prevents stretching */
+  object-fit: cover;
+  /* Prevents stretching */
 }
 
 
@@ -67,6 +73,7 @@
   .desktop-nav {
     display: block; // Show desktop nav
   }
+
   .mobile-nav {
     display: none; // Hide mobile nav
   }
@@ -84,8 +91,8 @@
     margin-left: 10px; // Spacing between items
   }
 
-  .nav-item-wrapper > .page-link,
-  .nav-item-wrapper > .nav-dropdown-toggle {
+  .nav-item-wrapper>.page-link,
+  .nav-item-wrapper>.nav-dropdown-toggle {
     padding: 10px 10px; // Clickable area
     display: block;
     text-decoration: none;
@@ -94,7 +101,7 @@
     font-size: 0.9rem; // Slightly smaller font
   }
 
-  .nav-item-wrapper > .nav-dropdown-toggle::after {
+  .nav-item-wrapper>.nav-dropdown-toggle::after {
     content: " ▼"; // Add dropdown arrow
     font-size: 0.7rem;
     padding-left: 3px;
@@ -126,8 +133,8 @@
   }
 
   /* Hover effects */
-  .nav-item-wrapper:hover > .page-link,
-  .nav-item-wrapper:hover > .nav-dropdown-toggle {
+  .nav-item-wrapper:hover>.page-link,
+  .nav-item-wrapper:hover>.nav-dropdown-toggle {
     background-color: #f5f5f5; // Light grey on hover
     color: #0d6efd; // RECOMB blue text on hover
   }
@@ -137,7 +144,7 @@
     color: #ffffff; // White text
   }
 
-  .nav-item-wrapper:hover > .nav-dropdown-menu {
+  .nav-item-wrapper:hover>.nav-dropdown-menu {
     display: block; // Show dropdown on hover
   }
 }
@@ -148,6 +155,7 @@
   .desktop-nav {
     display: none; // Hide desktop nav
   }
+
   .mobile-nav {
     display: block; // Show mobile nav
     float: right;
@@ -165,7 +173,8 @@
     padding-top: 10px;
     text-align: center;
   }
-  .mobile-nav .menu-icon > svg {
+
+  .mobile-nav .menu-icon>svg {
     fill: #424242; // Minima's default icon color
   }
 
@@ -190,7 +199,7 @@
   }
 
   /* Show menu when checkbox is checked */
-  .nav-trigger:checked ~ .trigger {
+  .nav-trigger:checked~.trigger {
     display: block;
   }
 
@@ -205,7 +214,7 @@
   }
 
   /* Mobile: Top-level item (non-dropdown) */
-  .nav-item-wrapper-mobile > .page-link {
+  .nav-item-wrapper-mobile>.page-link {
     display: block;
     padding: 8px 0;
     color: #333;
@@ -227,6 +236,7 @@
     padding-left: 0;
     margin: 0 0 10px 0;
   }
+
   .nav-dropdown-menu-mobile li .page-link {
     display: block;
     padding: 5px 0 5px 10px; // Indent dropdown items
@@ -240,12 +250,14 @@
  * for the speaker photo grid
  */
 .post-content table {
-  border: none; /* Removes the outer table border */
+  border: none;
+  /* Removes the outer table border */
 }
 
 .post-content td,
 .post-content th {
-  border: none; /* Removes the cell borders */
+  border: none;
+  /* Removes the cell borders */
   padding: 10px;
 }
 
@@ -254,7 +266,8 @@
 .post-content table tr:nth-child(odd),
 .post-content table tr:nth-child(even) {
   background-color: transparent !important;
-  background: none !important; /* Force remove background */
+  background: none !important;
+  /* Force remove background */
 }
 
 
@@ -262,8 +275,10 @@
    ========================================================================== */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #ffffff !important; /* Force light background */
-    color: #212529 !important; /* Force dark text */
+    background-color: #ffffff !important;
+    /* Force light background */
+    color: #212529 !important;
+    /* Force dark text */
   }
 
   .site-header {
@@ -275,15 +290,17 @@
   .site-title,
   .site-nav .page-link,
   .desktop-nav .page-link,
-  .mobile-nav .menu-icon > svg,
-  .nav-item-wrapper > .nav-dropdown-toggle {
-    color: #333 !important; /* Force default text color for nav */
+  .mobile-nav .menu-icon>svg,
+  .nav-item-wrapper>.nav-dropdown-toggle {
+    color: #333 !important;
+    /* Force default text color for nav */
   }
 
   .site-nav .page-link:hover,
-  .nav-item-wrapper:hover > .page-link,
-  .nav-item-wrapper:hover > .nav-dropdown-toggle {
-    color: #0d6efd !important; /* Force blue hover */
+  .nav-item-wrapper:hover>.page-link,
+  .nav-item-wrapper:hover>.nav-dropdown-toggle {
+    color: #0d6efd !important;
+    /* Force blue hover */
   }
 
   .post-content h1,
@@ -292,15 +309,18 @@
   .post-content h4,
   .post-content h5,
   .post-content h6 {
-    color: #212529 !important; /* Force dark headings */
+    color: #212529 !important;
+    /* Force dark headings */
   }
 
   .mobile-nav .trigger {
-    background-color: #ffffff !important; /* Force light mobile menu */
+    background-color: #ffffff !important;
+    /* Force light mobile menu */
   }
 
   .nav-dropdown-menu {
-    background-color: #ffffff !important; /* Force light dropdown */
+    background-color: #ffffff !important;
+    /* Force light dropdown */
   }
 
   .nav-dropdown-menu li .page-link {
@@ -311,15 +331,17 @@
     background-color: #0d6efd !important;
     color: #ffffff !important;
   }
-  
+
   /* Force all links in post content to be a readable blue */
   .post-content a {
-    color: #0d6efd !important; /* RECOMB blue */
+    color: #0d6efd !important;
+    /* RECOMB blue */
   }
 
   /* Force link hover color to be a darker blue */
   .post-content a:hover {
-    color: #0a58ca !important; /* Darker blue on hover */
+    color: #0a58ca !important;
+    /* Darker blue on hover */
   }
-  
+
 }
