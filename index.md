@@ -15,3 +15,4 @@ layout: home
 - Email: [{{ site.author.email }}](mailto:{{ site.author.email }})
 - X: [@RECOMBConf](https://x.com/RECOMBconf)
 - Bluesky: [@RECOMBConf](https://bsky.app/profile/recombconf.bsky.social)
+- LinkedIn: [@RECOMBConf](https://linkedin.com/company/recombconf)
