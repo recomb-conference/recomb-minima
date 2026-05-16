@@ -77,6 +77,9 @@ social_links:
     - title: RECOMB at BlueSky 
       icon: bluesky
       url: "https://bsky.app/profile/recombconf.bsky.social"
+    - title: RECOMB at LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/company/recombconf"
 #
 #   Hide syndication feed subscription link.
 #     RSS / Atom feed link is always rendered as the last item of social-links
